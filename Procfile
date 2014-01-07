@@ -1,0 +1,1 @@
+web: gunicorn henrikossipoff.wsgi
