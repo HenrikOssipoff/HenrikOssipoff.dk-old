@@ -1,0 +1,27 @@
+{% load i18n %}
+<!doctype html>
+<head>
+    {% block meta_tags %}{% endblock %}
+    <meta charset="utf-8">
+    <title>{% block title %}HenrikOssipoff.dk{% endblock %}</title>
+    {% block stylesheets %}
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css">
+    {% endblock %}
+    {% block additional_headers %}{% endblock %}
+</head>
+
+<body>
+
+    <section id="content" class="content">
+        {% block content %}{% endblock %}
+    </section>
+
+    {% block javascript %}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    {% endblock %}
+
+</body>
+</html>

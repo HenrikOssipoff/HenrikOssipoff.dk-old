@@ -1,1 +1,1 @@
-web: gunicorn henrikossipoff.wsgi
+web: newrelic-admin run-program gunicorn henrikossipoff.wsgi
