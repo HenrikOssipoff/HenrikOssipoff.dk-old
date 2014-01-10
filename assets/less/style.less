@@ -40,6 +40,36 @@ html, body {
     }
 }
 
+.technologies {
+    display: table;
+    height: 240px;
+    width: 100%;
+    position: relative;
+    background: url(../img/leaves.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #eee;
+
+    .text {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+        h1 {
+            //font-weight: 700;
+            font-size: 3.5em;
+            .text-shadow();
+        }
+
+        .lead {
+            font-weight: 400;
+            .text-shadow();
+        }
+    }
+}
+
 .intro {
     .box-padding();
 }
